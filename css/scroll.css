@@ -1,0 +1,111 @@
+:root {
+    --grey:#393e46;
+    --cream:#ece8d9;
+    --turquoise: #00adb5;
+    --pink : #fc5185;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.section_block {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+html,
+body {
+  
+    width: 100%;
+    height: 100%;
+    color: var(--cream);
+}
+
+.section_block.hero {
+   background-image: none;
+}
+
+.section_block.hero .section_content {
+    background-color: var(--grey)
+}
+
+
+.section_block .section_content {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section_block.buffett {
+    background-image: url(http://www.lan-chun-chih.com/images/man_buffett.jpg);
+}
+
+.section_block.buffett .section_content {
+    background-color: var(--turquoise);
+}
+
+.section_block.bezos {
+    background-image: url(http://www.lan-chun-chih.com/images/man_bezos.jpg);
+}
+
+.section_block.bezos .section_content {
+    background-color: var(--pink)
+}
+
+.section_block.sandberg {
+    background-image: url(http://www.lan-chun-chih.com/images/man_sandberg.jpg);
+}
+
+.section_block.sandberg .section_content {
+    background-color: var(--cream)
+}
+
+.nav-link.activated {
+    color: var(--pink); 
+    opacity: 80%;
+    font-weight: bolder;
+}
+
+.nav-link.activated:hover {
+    color: var(--pink);
+    opacity: 100%;
+    font-weight: bolder;
+}
+
+#name-main{
+    color: var(--turquoise);
+}
+
+.normal-bg{
+    background-color: var(--cream); !important
+}
+
+.normal-text-color{
+    color: var(--grey);
+}
+
+.navbar-brand.normal-text-color:hover{
+    color: var(--turquoise);
+}
+
+#zig-zag1 {
+    background:
+        linear-gradient(135deg, var(--grey) 25%, transparent 25%) -75px 0,
+        linear-gradient(225deg, var(--grey) 25%, transparent 25%) -75px 0,
+        linear-gradient(315deg,var(--grey) 25%, transparent 25%),
+        linear-gradient(45deg, var(--grey) 25%, transparent 25%);
+    background-size: 150px 150px;
+    background-color: rgb(63, 68, 76);
+}

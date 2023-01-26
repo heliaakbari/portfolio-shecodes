@@ -12,14 +12,78 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/16842fe55e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/scroll.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="container bg-warning">
-        <div class="header">
-            Hello world
-            <i class="fa-solid fa-face-smile-wink"></i>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary p-0">
+        <div class="container-fluid normal-bg p-0">
+            <a class=" navbar-brand normal-text-color ps-2" href="#"> Helia Akbari</a>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link p-2 activated" aria-current="page" href="#">Home</a>
+                    <a class="nav-link p-2" href="#">Features</a>
+                    <a class="nav-link p-2" href="#">Pricing</a>
+                    <a class="nav-link p-2">Disabled</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+
+        <section class="section_block hero">
+            <div class="section_content" id="zig-zag1">
+                <div class="text_box">
+                    <h2>Hi, I am</h2>
+                    <h1 id="name-main">Helia Akbari</h1>
+                    <p class="d-inline pe-3">Computer Science major </p>
+                    <i class="fa-solid fa-code d-inline"></i>
+                    <p class="d-inline ps-3">front-end developer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_block buffett">
+            <div class="section_content">
+                <div class="text_box">
+                    <h2>“ Games are won by players who <br>focus on the playing field, not by <br>those whose eyes are
+                        glued
+                        <br>to the scoreboard. ”
+                    </h2>
+                    <h3>比賽會贏的球員只專注在球場上，不是計分板上的分數</h3>
+                    <p> - Warren Edward Buffett</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_block bezos">
+            <div class="section_content">
+                <div class="text_box">
+                    <h2>“ Cleverness is a gift, <br>kindness is a choice ”</h2>
+                    <h3>聰明是一種天賦，而善良是一種選擇</h3>
+                    <p> - Jeff Bezos</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_block sandberg">
+            <div class="section_content">
+                <div class="text_box">
+                    <h2>“ Done is better than perfect ”</h2>
+                    <h3>比起空想完美，完成事情更加重要</h3>
+                    <p> - Sheryl Sandberg</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="include_footer">
         </div>
     </div>
 </body>

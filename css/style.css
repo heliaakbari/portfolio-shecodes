@@ -1,5 +1,13 @@
+:root {
+    --red : #fe595e;
+    --green : #8ac926;
+    --blue : #2a64f5;
+    --yellow : #f8db46;
+
+}
 body{
     font-weight: 900;
+    color: var(--red);
 }
 
 .header{
