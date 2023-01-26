@@ -126,11 +126,12 @@ font-size: 100px;
 
 .hero button{
     border-radius: 10px;
-    background-color: var(--norm-light);
-    
+    background-color: var(--secondary);
+    transition: 10ms ease-in;
 }
 
 .hero button:hover{
     color: var(--norm-light);
     background-color: var(--secondary);
+    transform: scale(1.1);
 }
