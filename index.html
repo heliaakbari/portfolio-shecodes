@@ -23,11 +23,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Work+Sans:wght@300;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/scroll.css">
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary p-0">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary py-0 navbar-custom">
         <div class="container-fluid normal-bg p-0">
             <a class=" navbar-brand normal-text-color ps-2" href="#"> Helia Akbari</a>
             <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
@@ -37,15 +36,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link p-2 activated" aria-current="page" href="#">Home</a>
-                    <a class="nav-link p-2" href="#">Features</a>
-                    <a class="nav-link p-2" href="#">Pricing</a>
-                    <a class="nav-link p-2">Disabled</a>
+                    <a class="nav-link activated" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link">Disabled</a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="wrapper">
+    <div class="wrapper homepage">
 
         <section class="section_block hero">
             <div class="section_content" id="zig-zag1">
@@ -62,13 +61,22 @@
 
         <section class="section_block buffett">
             <div class="section_content">
-                <div class="text_box">
-                    <h2>“ Games are won by players who <br>focus on the playing field, not by <br>those whose eyes are
-                        glued
-                        <br>to the scoreboard. ”
-                    </h2>
-                    <h3>比賽會贏的球員只專注在球場上，不是計分板上的分數</h3>
-                    <p> - Warren Edward Buffett</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./resources/weather.png" alt="">
+                        </div>
+                        <div class="col-sm-6 app-section">
+                            <h3 class="apps-texts apps-title">Weather App</h3>
+                            <p class="apps-texts">this app is used for the purpose of detemining
+                                the weather with real time data from a weather
+                                website . i did this project for my plus workshop.
+                                this website is responsive and also is designed with the 
+                                help of bootstrap
+                            </p>
+                            <a rel="stylesheet"  class="btn secondary-link" href="https://weather-heliaakbari.netlify.app/" target="_blank">open app </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
