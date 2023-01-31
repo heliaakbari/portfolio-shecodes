@@ -19,6 +19,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    min-height: 500px;
 }
 
 html,
@@ -188,6 +189,19 @@ img{
     background-color: var(--primary);
 }
 
+.primary-link {
+    float: left;
+    border-radius: 10px;
+    background-color: var(--primary);
+    transition: 10ms ease-in;
+    box-shadow: var(--shadow);
+}
+
+.primary-link:hover {
+    color: var(--norm-light);
+    background-color: var(--secondary);
+}
+
 @media (max-width:576px) {
     .homepage .container{
         width: 90%;
@@ -227,6 +241,9 @@ img{
         
     }
 
+    .section_block{
+        min-height: 700px;
+    }
 }
 
 @media (min-width : 576px) {
