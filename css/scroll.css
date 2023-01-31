@@ -51,19 +51,11 @@ body{
 }
 
 
-.section_block.buffett {
-    background-image: url(http://www.lan-chun-chih.com/images/man_buffett.jpg);
-}
-
-.section_block.buffett .section_content {
+.section_block.weather-app .section_content {
     background-color: var(--primary);
 }
 
-.section_block.bezos {
-    background-image: url(http://www.lan-chun-chih.com/images/man_bezos.jpg);
-}
-
-.section_block.bezos .section_content {
+.section_block.todo-app .section_content {
     background-color: var(--secondary)
 }
 
@@ -74,6 +66,35 @@ body{
 .section_block.sandberg .section_content {
     background-color: var(--norm-light)
 }
+.projects-intro{
+    background-color: var(--secondary);
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        color: var(--norm-dark);
+}
+.projects-intro h3{
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.projects-intro p{
+    font-weight: 700;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.projects-intro hr {
+     border: 2px solid var(--norm-dark);
+  border-radius: 5px;
+  width: 60%;
+  margin: 5px auto 10px auto;
+  opacity: 1;
+}
+
 
 .nav-link{
     padding: 3px 0px 3px 10px;
@@ -146,6 +167,11 @@ font-size: 100px;
     background-color: var(--secondary);
     transition: 10ms ease-in;
     box-shadow: var(--shadow);
+    font-weight: 700;
+    text-decoration: none;
+        color: var(--norm-dark);
+        padding: 7px 13px;
+        border: none;
 }
 
 .hero button:hover {
@@ -182,14 +208,20 @@ img{
     background-color: var(--secondary);
     transition: 10ms ease-in;
     box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--norm-dark);
+    padding: 7px 13px;
 }
 
-.secondary-link:hover {
+.secondary-link:hover , .secondary-link:active{
     color: var(--norm-light);
     background-color: var(--primary);
 }
 
 .primary-link {
+    text-decoration: none;
+        color: var(--norm-dark);
+        padding: 7px 13px;
     float: left;
     border-radius: 10px;
     background-color: var(--primary);
@@ -197,7 +229,7 @@ img{
     box-shadow: var(--shadow);
 }
 
-.primary-link:hover {
+.primary-link:hover , .primary-link:active{
     color: var(--norm-light);
     background-color: var(--secondary);
 }
@@ -210,6 +242,13 @@ img{
     }
 
     .homepage .secondary-link{
+        display: block;
+        float: none;
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+    }
+     .homepage .primary-link{
         display: block;
         float: none;
         width: fit-content;
@@ -242,7 +281,7 @@ img{
     }
 
     .section_block{
-        min-height: 700px;
+        min-height: 600px;
     }
 }
 
