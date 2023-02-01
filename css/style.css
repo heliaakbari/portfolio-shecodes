@@ -295,8 +295,8 @@ font-size: 100px;
 }
 
 .work .card{
-    background-color: var(--norm-light);
-    color: var(--norm-dark);
+    background-color: var(--norm-dark);
+    color: var(--norm-light);
     margin: 20px;
     text-align: center;
 }
