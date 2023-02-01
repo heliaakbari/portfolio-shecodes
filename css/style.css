@@ -14,27 +14,19 @@
     color: var(--norm-light);
 }
 
-.nav-link.activated {
-    color: var(--secondary); 
-    opacity: 80%;
-    font-weight: bolder;
-}
-
-.nav-link.activated:hover {
+.work .nav-link:hover{
     opacity: 100%;
 }
 
-
-.about .navbar-brand , .work .navbar-brand{
+.about .navbar-brand{
     color: var(--norm-light);
 }
 
-.navbar-brand:hover {
-    color: var(--primary);
-}
+
 
 .navbar-brand {
     font-family: 'Caveat', cursive;
+    opacity: 100%;
 }
 
 .dark-bg{
@@ -47,7 +39,27 @@
 .homepage .navbar-custom {
     background-color: var(--norm-light);
 }
+.work .nav-link{
+    opacity: 80%;
+    color: var(--norm-dark);
+}
 
+ .homepage .navbar-brand,
+.work .navbar-brand{
+    color: var(--norm-dark);
+    opacity: 100%;
+ }
+.nav-link.activated:hover {
+    opacity: 100% !important;
+}
+.nav-link.activated {
+    color: var(--secondary);
+    opacity: 80%;
+    font-weight: bolder;
+}
+.navbar-brand:hover {
+    color: var(--primary);
+}
 #zig-zag-hero {
     background:
         linear-gradient(135deg, var(--norm-dark) 25%, transparent 25%) -75px 0,
@@ -289,6 +301,7 @@ font-size: 100px;
     background-color: var(--secondary);
     margin: 0 auto;
     box-shadow: var(--shadow);
+    color: var(--norm-dark);
 }
 .work .container{
     margin-top: 30px;
@@ -301,6 +314,7 @@ font-size: 100px;
     text-align: center;
 }
 .work .card-body h4 {
+    color: var(--secondary);
     font-size: 25px;
     font-weight: 700;
 }
