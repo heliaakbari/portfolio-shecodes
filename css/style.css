@@ -10,19 +10,26 @@
     padding: 3px 0px 3px 10px;
 }
 
+.about .nav-link {
+    color: var(--norm-light);
+}
+
 .nav-link.activated {
-    color: var(--secondary);
+    color: var(--secondary); 
     opacity: 80%;
     font-weight: bolder;
 }
 
 .nav-link.activated:hover {
-    color: var(--secondary);
     opacity: 100%;
-    font-weight: bolder;
 }
 
-.navbar-brand.normal-text-color:hover {
+
+.about .navbar-brand{
+    color: var(--norm-light);
+}
+
+.navbar-brand:hover {
     color: var(--primary);
 }
 
@@ -30,12 +37,17 @@
     font-family: 'Caveat', cursive;
 }
 
-.navbar-custom {
+.dark-bg{
+    background-color: var(--norm-dark);
+}
+.navbar-custom{
     height: 5%;
+}
+.homepage .navbar-custom {
     background-color: var(--norm-light);
 }
 
-#zig-zag1 {
+#zig-zag-hero {
     background:
         linear-gradient(135deg, var(--norm-dark) 25%, transparent 25%) -75px 0,
         linear-gradient(225deg, var(--norm-dark) 25%, transparent 25%) -75px 0,
@@ -43,6 +55,16 @@
         linear-gradient(45deg, var(--norm-dark) 25%, transparent 25%);
     background-size: 150px 150px;
     background-color: rgb(63, 68, 76);
+}
+
+#zig-zag-about {
+    background:
+        linear-gradient(135deg, var(--norm-light) 25%, transparent 25%) -75px 0,
+        linear-gradient(225deg, var(--norm-light) 25%, transparent 25%) -75px 0,
+        linear-gradient(315deg, var(--norm-light) 25%, transparent 25%),
+        linear-gradient(45deg, var(--norm-light) 25%, transparent 25%);
+    background-size: 150px 150px;
+    background-color: #f3efe0;
 }
 
 .wrapper {
@@ -67,6 +89,7 @@ body {
     height: 100%;
     font-family: 'Nunito', sans-serif;
 }
+
 body{
     position: relative;
     top: 5%;
@@ -83,7 +106,6 @@ body{
 .section_block .section_content {
     width: 100%;
     height: 100%;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,9 +162,7 @@ body{
 font-family: 'Caveat', cursive;
 font-size: 100px;
 }
-.hero p{
-    font-size: 16px;
-}
+
 #welcome{
     font-size: 20px;
 }
@@ -158,8 +178,10 @@ font-size: 100px;
 .hero{
     color: var(--norm-light);
     font-weight: 900;
+    text-align: center;
 }
 .hero p{
+    font-size: 16px;
     display: inline;
 }
 .hero button {
@@ -187,11 +209,18 @@ font-size: 100px;
         box-shadow: var(--shadow);
 }
 
-img{
+.homepage img{
     width: 80%;
     border-radius: 5px;
     box-shadow: var(--shadow);
 }
+
+.about img{
+     width: 80%;
+     border-radius: 5px;
+     box-shadow: var(--shadow);
+}
+
 
 .apps-title{
     font-weight: 700;
@@ -242,14 +271,15 @@ img{
         padding-top: 20px;
     }
 
-    .homepage .secondary-link{
+    .secondary-link{
         display: block;
         float: none;
         width: fit-content;
         display: block;
         margin: 0 auto;
     }
-     .homepage .primary-link{
+
+    .primary-link{
         display: block;
         float: none;
         width: fit-content;
@@ -262,6 +292,7 @@ img{
         text-align: left;
         font-size: 18px;
     }
+
     .homepage .apps-title{
         font-size: 20px;
         margin-top: 10px;
@@ -272,6 +303,7 @@ img{
     #name-main{
         font-size: 65px;
     }
+
     .hero p{
         display: block;
         padding: 0;
@@ -284,11 +316,27 @@ img{
     .section_block{
         min-height: 600px;
     }
+
+    .about {
+        text-align: center;
+    }
+    
+    .about img{
+        display: block;
+        margin: 0 auto;
+    }
+    
 }
 
 
 @media (min-width : 576px) {
+    .about .container{
+            padding: 0;
+            margin: 0;
+    }
+
     .homepage .container{
+        text-align: center;
         height: 80%;
             width: 80%;
             display: flex !important;
