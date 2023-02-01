@@ -10,15 +10,16 @@
     padding: 3px 0px 3px 10px;
 }
 
-.about .nav-link , .work .nav-link{
+.about .nav-link , .work .nav-link, .contact .nav-link{
+    opacity: 80%;
     color: var(--norm-light);
 }
 
-.work .nav-link:hover{
+.nav-link:hover{
     opacity: 100%;
 }
 
-.about .navbar-brand{
+.about .navbar-brand, .contact .navbar-brand{
     color: var(--norm-light);
 }
 
@@ -77,7 +78,7 @@
         linear-gradient(315deg, var(--norm-light) 25%, transparent 25%),
         linear-gradient(45deg, var(--norm-light) 25%, transparent 25%);
     background-size: 150px 150px;
-    background-color: #f3efe0;
+    background-color: #d2cec4;
 }
 
 #zig-zag-work{
@@ -87,7 +88,17 @@
             linear-gradient(315deg, var(--primary) 25%, transparent 25%),
             linear-gradient(45deg, var(--primary) 25%, transparent 25%);
         background-size: 150px 150px;
-        background-color:#0fa7af;
+        background-color:#119ba2;
+}
+
+#zig-zag-contact {
+    background:
+        linear-gradient(135deg, var(--secondary) 25%, transparent 25%) -75px 0,
+        linear-gradient(225deg, var(--secondary) 25%, transparent 25%) -75px 0,
+        linear-gradient(315deg, var(--secondary) 25%, transparent 25%),
+        linear-gradient(45deg, var(--secondary) 25%, transparent 25%);
+    background-size: 150px 150px;
+    background-color: #ff5f8f;
 }
 .wrapper {
     width: 100%;
@@ -114,7 +125,7 @@ body {
 html .homepage{
     background-color: var(--norm-light);
 }
-html .about, html .work{
+html .about, html .work,html .contact{
     background-color: var(--norm-dark);
 }
 .wrapper{
@@ -321,6 +332,46 @@ font-size: 100px;
 .work .card-body p{
     font-size: 14px;
 }
+.contact .container{
+    background-color: var(--norm-light);
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    width: 85%;
+    max-width: 700px;
+    padding: 0;
+}
+.contact .row.second{
+    padding-top: 30px;
+}
+.infos{
+    padding: 50px;
+}
+.infos i{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 50px;
+    color:var(--primary);
+}
+.contact h4{
+    background-color: var(--norm-dark);
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    width: 100%;
+    color: var(--norm-light);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+.infos a{
+    color: var(--primary);
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 16px;
+}
 @media (max-width:576px) {
     .homepage .container{
         width: 90%;
@@ -430,7 +481,25 @@ font-size: 100px;
         margin: 5px 0;
     }
 
-    
+    .contact h4{
+        font-size: 25px;
+    }
+    .contact .container{
+        width: 90%;
+    }
+    .infos{
+        padding: 20px 0;
+    }
+    .infos .row.second{
+        padding-top: 0;
+    }
+    .infos .col-sm-6{
+        margin: 10px 0;
+    }
+
+    .infos i{
+        font-size: 40px;
+    }
 }
 
 
