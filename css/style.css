@@ -500,6 +500,9 @@ font-size: 100px;
     .infos i{
         font-size: 40px;
     }
+    .nav-link{
+        padding: 0 0 10px 10px;
+    }
 }
 
 
