@@ -70,12 +70,12 @@
 
 #zig-zag-work{
     background:
-            linear-gradient(135deg, var(--norm-light) 25%, transparent 25%) -75px 0,
-            linear-gradient(225deg, var(--norm-light) 25%, transparent 25%) -75px 0,
-            linear-gradient(315deg, var(--norm-light) 25%, transparent 25%),
-            linear-gradient(45deg, var(--norm-light) 25%, transparent 25%);
+            linear-gradient(135deg, var(--primary) 25%, transparent 25%) -75px 0,
+            linear-gradient(225deg, var(--primary) 25%, transparent 25%) -75px 0,
+            linear-gradient(315deg, var(--primary) 25%, transparent 25%),
+            linear-gradient(45deg, var(--primary) 25%, transparent 25%);
         background-size: 150px 150px;
-        background-color: #f3efe0;
+        background-color:#0fa7af;
 }
 .wrapper {
     width: 100%;
@@ -282,7 +282,7 @@ font-size: 100px;
 }
 
 .work-main{
-    padding: 70px;
+    padding: 100px 0 70px 0;
     display: block;
     text-align: center;
     font-family: 'Caveat', cursive;
@@ -290,7 +290,23 @@ font-size: 100px;
     margin: 0 auto;
     box-shadow: var(--shadow);
 }
+.work .container{
+    margin-top: 30px;
+}
 
+.work .card{
+    background-color: var(--norm-light);
+    color: var(--norm-dark);
+    margin: 20px;
+    text-align: center;
+}
+.work .card-body h4 {
+    font-size: 25px;
+    font-weight: 700;
+}
+.work .card-body p{
+    font-size: 14px;
+}
 @media (max-width:576px) {
     .homepage .container{
         width: 90%;
@@ -385,6 +401,22 @@ font-size: 100px;
         display: block;
         margin: 0 auto;
     }
+    .work-main h1{
+        font-size: 20px;
+    }
+    .work-main{
+        margin-bottom: 10px;
+        padding: 70px 0 30px 0;
+    }
+
+    .work .container{
+            margin: 0px;
+    }
+    .work .card{
+        margin: 5px 0;
+    }
+
+    
 }
 
 
