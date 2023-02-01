@@ -159,6 +159,8 @@ html .about{
   border: 2px solid var(--norm-dark);
   border-radius: 5px;
   width: 60%;
+  padding: 0;
+  color: var(--norm-dark);
   margin: 5px auto 10px auto;
   opacity: 1;
 }
@@ -363,6 +365,11 @@ font-size: 100px;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
+    }
+
+    .homepage img{
+        display: block;
+        margin: 0 auto;
     }
 }
 
