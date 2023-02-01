@@ -10,7 +10,7 @@
     padding: 3px 0px 3px 10px;
 }
 
-.about .nav-link {
+.about .nav-link , .work .nav-link{
     color: var(--norm-light);
 }
 
@@ -25,7 +25,7 @@
 }
 
 
-.about .navbar-brand{
+.about .navbar-brand , .work .navbar-brand{
     color: var(--norm-light);
 }
 
@@ -40,10 +40,9 @@
 .dark-bg{
     background-color: var(--norm-dark);
 }
+
 .navbar-custom{
-    min-height: 5% !important;
-    max-height: 5% !important;
-    height: 5% !important;
+    height: 5%;
 }
 .homepage .navbar-custom {
     background-color: var(--norm-light);
@@ -69,6 +68,15 @@
     background-color: #f3efe0;
 }
 
+#zig-zag-work{
+    background:
+            linear-gradient(135deg, var(--norm-light) 25%, transparent 25%) -75px 0,
+            linear-gradient(225deg, var(--norm-light) 25%, transparent 25%) -75px 0,
+            linear-gradient(315deg, var(--norm-light) 25%, transparent 25%),
+            linear-gradient(45deg, var(--norm-light) 25%, transparent 25%);
+        background-size: 150px 150px;
+        background-color: #f3efe0;
+}
 .wrapper {
     width: 100%;
     height: 95%;
@@ -94,7 +102,7 @@ body {
 html .homepage{
     background-color: var(--norm-light);
 }
-html .about{
+html .about, html .work{
     background-color: var(--norm-dark);
 }
 .wrapper{
@@ -124,16 +132,13 @@ html .about{
 }
 
 .section_block.todo-app .section_content {
-    background-color: var(--secondary)
+    background-color: var(--secondary);
 }
 
-.section_block.sandberg {
-    background-image: url(http://www.lan-chun-chih.com/images/man_sandberg.jpg);
+.section_block.knitting .section_content{
+    background-color: var(--primary);
 }
 
-.section_block.sandberg .section_content {
-    background-color: var(--norm-light)
-}
 .projects-intro{
     background-color: var(--secondary);
         margin: 0;
@@ -177,7 +182,6 @@ font-size: 100px;
 }
 .normal-bg{
     background-color: var(--norm-light);
-    box-shadow: var(--shadow);
 }
 
 .normal-text-color{
@@ -275,6 +279,16 @@ font-size: 100px;
 .about h1{
     font-family: 'Caveat', cursive;
     color: var(--primary);
+}
+
+.work-main{
+    padding: 70px;
+    display: block;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    background-color: var(--secondary);
+    margin: 0 auto;
+    box-shadow: var(--shadow);
 }
 
 @media (max-width:576px) {
