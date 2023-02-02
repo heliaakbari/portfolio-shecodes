@@ -562,9 +562,12 @@ color: var(--norm-light);
         padding: 0 0 10px 10px;
     }
 
+    footer .links{
+        justify-content: space-around;
+    }
         footer .links a {
-            margin: 20px 30px 20px 30px;
-            font-size: 20px;
+            margin: 20px 0;
+            font-size: 25px;
             color: var(--primary);
         }
         footer .open-source{
