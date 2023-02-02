@@ -376,6 +376,50 @@ font-size: 100px;
     text-decoration: none;
     font-size: 16px;
 }
+
+footer .links{
+    display: flex;
+    justify-content: center;
+}
+footer .open-source{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: var(--norm-dark);
+}
+footer .open-source a{
+    padding-right: 3px;
+    color: var(--primary);
+    font-weight: bolder;
+}
+footer .open-source a:hover {
+    color: var(--secondary);
+    scale: 1.1;
+    padding-right: 10px;
+}
+footer .links a{
+    margin: 30px 60px 40px 60px;
+    font-size: 30px;
+    color: var(--primary);
+}
+footer .links a:hover, footer .links a:active{
+    color: var(--secondary);
+    scale: 1.1;
+}
+footer{
+    padding: 40px 40px 3px 40px;
+}
+.work footer{
+    background-color: var(--norm-light);
+}
+.contact footer{
+    background-color: var(--norm-dark);
+    margin-top: 50px;
+}
+.about footer .open-source p,.contact footer .open-source p{
+color: var(--norm-light);
+}
 @media (max-width:576px) {
     .homepage .container{
         width: 90%;
@@ -484,7 +528,9 @@ font-size: 100px;
     .work .card{
         margin: 5px 0;
     }
-
+    .contact .in{
+        padding: 0;
+    }
     .contact h4{
         font-size: 25px;
     }
@@ -492,7 +538,8 @@ font-size: 100px;
         width: 90%;
     }
     .infos{
-        padding: 20px 0;
+        padding: 10px 0;
+        margin:10px;
     }
     .infos .row.second{
         padding-top: 0;
@@ -508,6 +555,15 @@ font-size: 100px;
     .nav-link{
         padding: 0 0 10px 10px;
     }
+
+        footer .links a {
+            margin: 20px 30px 20px 30px;
+            font-size: 20px;
+            color: var(--primary);
+        }
+        footer .open-source{
+            font-size: 12px;
+        }
 }
 
 
