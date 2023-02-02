@@ -15,6 +15,11 @@
     color: var(--norm-light);
 }
 
+.work .nav-link {
+    opacity: 80%;
+    color: var(--norm-dark);
+}
+
 .nav-link:hover{
     opacity: 100%;
 }
@@ -40,27 +45,25 @@
 .homepage .navbar-custom {
     background-color: var(--norm-light);
 }
-.work .nav-link{
-    opacity: 80%;
-    color: var(--norm-dark);
-}
 
  .homepage .navbar-brand,
 .work .navbar-brand{
     color: var(--norm-dark);
     opacity: 100%;
  }
-.nav-link.activated:hover {
-    opacity: 100% !important;
-}
+
 .nav-link.activated {
     color: var(--secondary);
     opacity: 80%;
     font-weight: bolder;
 }
+ .nav-link.activated:hover {
+     opacity: 100% ;
+ }
 .navbar-brand:hover {
     color: var(--primary);
 }
+
 #zig-zag-hero {
     background:
         linear-gradient(135deg, var(--norm-dark) 25%, transparent 25%) -75px 0,
@@ -344,10 +347,9 @@ font-size: 100px;
     padding-top: 30px;
 }
 .infos{
-    padding: 50px;
+    margin: 50px;
 }
 .infos i{
-    display: block;
     margin: 10px auto;
     text-align: center;
     font-size: 50px;
@@ -366,7 +368,9 @@ font-size: 100px;
 }
 .infos a{
     color: var(--primary);
+    width: fit-content;
     display: block;
+    margin: 0 auto;
     text-align: center;
     line-height: 30px;
     text-decoration: none;
@@ -500,6 +504,7 @@ font-size: 100px;
     .infos i{
         font-size: 40px;
     }
+
     .nav-link{
         padding: 0 0 10px 10px;
     }
@@ -516,8 +521,8 @@ font-size: 100px;
         text-align: center;
         height: 80%;
             width: 80%;
-            display: flex !important;
-            align-items: center !important;
+            display: flex;
+            align-items: center;
     }
 
     .homepage .apps-texts{
