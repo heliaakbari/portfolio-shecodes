@@ -328,12 +328,18 @@ font-size: 100px;
     text-align: center;
 }
 .work .card-body h4 {
-    color: var(--secondary);
+    color: var(--norm-light);
     font-size: 25px;
     font-weight: 700;
 }
 .work .card-body p{
+    margin: 0;
     font-size: 14px;
+}
+.work .card a{
+    color: var(--secondary);
+    padding: 0;
+    margin: 0;
 }
 .contact .container{
     background-color: var(--norm-light);
@@ -417,8 +423,10 @@ footer{
     padding: 40px 40px 3px 40px;
 }
 .work footer{
+    margin-top: 30px;
     background-color: var(--norm-light);
 }
+
 .contact footer{
     background-color: var(--norm-dark);
     margin-top: 50px;
